@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "start":"app.js",
     "dev": "nodemon --exec babel-node app.js",
     "test": "mocha \"./**/*.spec.js\"",
     "coverage": "nyc npm run test"
