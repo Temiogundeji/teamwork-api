@@ -7,7 +7,8 @@
     "prestart": "babel ./src --out-dir build",
     "start": "node ./build/app",
     "dev": "nodemon --exec babel-node src/app.js",
-    "test": "nyc --reporter=html --reporter=text --reporter=lcov mocha -r @babel/register"
+    "test": "nyc --reporter=html --reporter=text --reporter=lcov mocha -r @babel/register",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "keywords": [],
   "author": "",
